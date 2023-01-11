@@ -1,0 +1,69 @@
+/* Reset CSS */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: #DDD;
+}
+
+header{
+  background-color: #2196f3;
+}
+
+header, section{
+  padding: 5rem;
+}
+
+main{
+  max-width: 1220px;
+  margin: auto;
+  
+  display: grid;
+  
+  grid-template-areas:
+    'video-player video-player'
+    'video-info   video-info'
+    'actions      actions'
+    'channel      subscribe'
+    'up-next       up-next'
+  ;
+}
+
+.video-player{
+  background-color: #FFeb3b;
+  grid-area: video-player;
+}
+
+.video-info{
+  background-color: #e91e63;
+  grid-area: video-info;
+}
+
+.actions{
+  background-color: #03a9f4;
+  grid-area: actions;
+}
+
+.channel{
+  background-color: #8bc34a;
+  grid-area: channel;
+}
+
+.subscribe{
+  background-color: #673ab7;
+  grid-area: subscribe;
+}
+
+.ad{
+  background-color: #FF5722;
+  grid-area: ad;
+}
+
+.up-next{
+  background-color: #3f51b5;
+  grid-area: up-next;
+}
